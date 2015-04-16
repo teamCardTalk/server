@@ -6,7 +6,7 @@ var router = express.Router();
 var upload = require('../handlers/upload.js');
 
 router.post('/', upload.create);
-router.get('/:uploadquery', upload.read);
+router.get('/:getquery', upload.read);
 //router.put('/', upload.update);
 router.delete('/', upload.remove);
 
