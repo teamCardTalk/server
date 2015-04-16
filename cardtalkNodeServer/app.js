@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var memo = require('./routes/memo');
-var upload = require('./routes/upload');
+var card = require('./routes/card');
 var image = require('./routes/image');
 
 var app = express();
@@ -47,7 +47,7 @@ app.use(function(req, res, next) {
 app.use('/', routes);
 app.use('/users', users);
 app.use('/memo', memo);
-app.use('/upload', upload);
+app.use('/card', card);
 app.use('/image', image);
 
 

@@ -1,6 +1,3 @@
-/**
- * Created by fodrh on 2015. 4. 10..
- */
 var formidable = require('formidable'),
     util = require('util'),
     path = require('path'),
@@ -64,7 +61,7 @@ exports.create = function (req, res) {
         newCard.memo = fields["memo"];
         newCard.date = new Date();
 
-        _insertMemo(req, newCard, function (error, results) {
+        _insertCard(req, newCard, function (error, results) {
             result["error"] = error;
             result["results"] = results;
             res.end(JSON.stringify(newCard));
@@ -73,27 +70,25 @@ exports.create = function (req, res) {
 };
 
 exports.read = function(req, res) {
-
     var getquery = req.params.getquery;
     var _id = querystring.parse(getquery)['_id'];
-    var where = req.query;
-
+    var where = {status: "1"};
 
     if (typeof _id !== 'undefined') {
         var ObjectID = require('mongodb').ObjectID;
         var objid = new ObjectID(_id);
-        where = {_id: objid};
+        where = {$and: [{status: "1"},{_id: objid}]};
     }
 
     console.log("where: " + JSON.stringify(where));
-    _findMemo(req, where || {}, function (err, results) {
+    _findCard(req, where, function (err, results) {
         res.json({error: err, results: results});
     });
 };
 
 exports.update = function(req, res) {
-    var getquery = req.params.getquery;
-    var _id = querystring.parse(getquery)['_id'];
+    var putquery = req.params.putquery;
+    var _id = querystring.parse(putquery)['_id'];
     var where = {};
     var body = req.body;
 
@@ -103,42 +98,51 @@ exports.update = function(req, res) {
         where = {_id: objid};
     }
 
-    _updateMemo(req, where, body, function(error, results) {
+    _updateCard(req, where, body, function(error, results) {
         res.json( {error: error, results : results});
     });
 };
 
 exports.remove = function (req, res) {
-    var where = req.query;
-    var body = req.body;
+    var delquery = req.params.delquery;
+    var _id = querystring.parse(delquery)['_id'];
+    var where = {};
+    var body = {status : "0"};
 
-    _removeMemo(req, where, body, function (error, results) {
+    if (typeof _id !== 'undefined') {
+        var ObjectID = require('mongodb').ObjectID;
+        var objid = new ObjectID(_id);
+        where = {_id: objid};
+    }
+
+    _removeCard(req, where, body, function (error, results) {
         res.json({ error : error, results : results});
     });
 };
 
-function _insertMemo(req, card, callback) {
+function _insertCard(req, card, callback) {
     req.db.collection('test', function(err, collection) {
         collection.insert(card, {safe:true}, callback);
     });
 }
 
-function _findMemo(req, where, callback) {
+function _findCard(req, where, callback) {
     where = where || {};
-
     console.log("where: " + JSON.stringify(where));
     req.db.collection('test', function(err, collection) {
         collection.find(where).toArray(callback);
     });
 }
 
-function _updateMemo(req, where, body, callback) {
+function _updateCard(req, where, body, callback) {
+    console.log("where: " + JSON.stringify(where));
+    console.log("body: " + JSON.stringify(body));
     req.db.collection('test', function(err, collection) {
         collection.update(where, {$set : body}, callback);
     });
 }
 
-function _removeMemo(req, where, body, callback) {
+function _removeCard(req, where, body, callback) {
     req.db.collection('test', function(err, collection) {
         collection.update(where, {$set : body}, callback);
         //collection.remove(where, callback);
