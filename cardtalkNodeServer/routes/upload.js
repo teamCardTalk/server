@@ -7,7 +7,7 @@ var upload = require('../handlers/upload.js');
 
 router.post('/', upload.create);
 router.get('/:getquery', upload.read);
-//router.put('/', upload.update);
+router.put('/:putquery', upload.update);
 router.delete('/', upload.remove);
 
 module.exports = router;

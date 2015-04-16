@@ -39,7 +39,6 @@ exports.create = function (req, res) {
         result = files;
         var fileInfos = [];
 
-
         for (var file in files) {
             var path = files[file][1]['path'],
                 index = path.lastIndexOf('/') + 1,
@@ -79,6 +78,7 @@ exports.read = function(req, res) {
     var _id = querystring.parse(getquery)['_id'];
     var where = req.query;
 
+
     if (typeof _id !== 'undefined') {
         var ObjectID = require('mongodb').ObjectID;
         var objid = new ObjectID(_id);
@@ -91,10 +91,28 @@ exports.read = function(req, res) {
     });
 };
 
+exports.update = function(req, res) {
+    var getquery = req.params.getquery;
+    var _id = querystring.parse(getquery)['_id'];
+    var where = {};
+    var body = req.body;
+
+    if (typeof _id !== 'undefined') {
+        var ObjectID = require('mongodb').ObjectID;
+        var objid = new ObjectID(_id);
+        where = {_id: objid};
+    }
+
+    _updateMemo(req, where, body, function(error, results) {
+        res.json( {error: error, results : results});
+    });
+};
+
 exports.remove = function (req, res) {
     var where = req.query;
+    var body = req.body;
 
-    _removeMemo(req, where, function (error, results) {
+    _removeMemo(req, where, body, function (error, results) {
         res.json({ error : error, results : results});
     });
 };
@@ -120,8 +138,9 @@ function _updateMemo(req, where, body, callback) {
     });
 }
 
-function _removeMemo(req, where, callback) {
+function _removeMemo(req, where, body, callback) {
     req.db.collection('test', function(err, collection) {
-        collection.remove(where, callback);
+        collection.update(where, {$set : body}, callback);
+        //collection.remove(where, callback);
     });
 }
