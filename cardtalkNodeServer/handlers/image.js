@@ -8,19 +8,10 @@ exports.read = function(req, res) {
     var vpath = UPLOAD_FOLDER + "/" + path;
  
     console.log("path: " + path);
-    
-    fs.readFile(vpath, function(err, data) {
 
-        if (err) {
-            res.writeHead(404, {
-                'content-type': 'text/plain'
-            });
-            res.end('404');
-        }
-
-        res.writeHead(200, {
-            'Content-Type': 'image/png'
+    res.sendfile(path,
+        { root: './data'},
+        function(err) {
+            if (err) res.json(err);
         });
-        res.end(data, 'binary');
-    });  
 };
