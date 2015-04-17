@@ -8,7 +8,6 @@ var formidable = require('formidable'),
 //var UPLOAD_FOLDER = __dirname + "/data";
 var UPLOAD_FOLDER = "./data";
 
-
 // set timezone
 process.env.TZ = 'Asia/Seoul';
 
@@ -65,7 +64,7 @@ exports.create = function (req, res) {
         newCard.nickname = fields["nickname"] || "노란 조커";
         newCard.icon = fields["icon"] || "icon/icon1.png";
         newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
-        newCard.createtime = new Date();
+        newCard.createtime = new Date().toLocaleString();
         newCard.content = fields["content"];
         newCard.partynumber = fields["partynumber"] || "1";
         newCard.chattingtime = newCard.createtime;
@@ -133,7 +132,7 @@ exports.remove = function (req, res) {
 };
 
 function _insertCard(req, card, callback) {
-    req.db.collection('test', function(err, collection) {
+    req.db.collection('cards', function(err, collection) {
         collection.insert(card, {safe:true}, callback);
     });
 }
@@ -141,7 +140,7 @@ function _insertCard(req, card, callback) {
 function _findCard(req, where, callback) {
     where = where || {};
     console.log("where: " + JSON.stringify(where));
-    req.db.collection('test', function(err, collection) {
+    req.db.collection('cards', function(err, collection) {
         collection.find(where).toArray(callback);
     });
 }
@@ -149,13 +148,13 @@ function _findCard(req, where, callback) {
 function _updateCard(req, where, body, callback) {
     console.log("where: " + JSON.stringify(where));
     console.log("body: " + JSON.stringify(body));
-    req.db.collection('test', function(err, collection) {
+    req.db.collection('cards', function(err, collection) {
         collection.update(where, {$set : body}, callback);
     });
 }
 
 function _removeCard(req, where, body, callback) {
-    req.db.collection('test', function(err, collection) {
+    req.db.collection('cards', function(err, collection) {
         collection.update(where, {$set : body}, callback);
         //collection.remove(where, callback);
     });

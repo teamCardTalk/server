@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var memo = require('./routes/memo');
 var card = require('./routes/card');
 var image = require('./routes/image');
+var chat = require('./routes/chat');
 
 var app = express();
 
@@ -25,7 +26,6 @@ db.open(function(err, db) {
         console.log("Connected to 'testdb' datbase");
     }
 });
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,7 +49,7 @@ app.use('/users', users);
 app.use('/memo', memo);
 app.use('/card', card);
 app.use('/image', image);
-
+app.use('/chat', chat);
 
 
 // catch 404 and forward to error handler
