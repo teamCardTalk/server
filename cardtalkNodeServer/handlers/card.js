@@ -8,6 +8,10 @@ var formidable = require('formidable'),
 //var UPLOAD_FOLDER = __dirname + "/data";
 var UPLOAD_FOLDER = "./data";
 
+
+// set timezone
+process.env.TZ = 'Asia/Seoul';
+
 exports.create = function (req, res) {
     var form = new formidable.IncomingForm(),
         files = [],
@@ -57,9 +61,16 @@ exports.create = function (req, res) {
     });
 
     form.parse(req, function(err, fields, files) {
-        newCard.author = fields["author"];
-        newCard.memo = fields["memo"];
-        newCard.date = new Date();
+        newCard.authorid = fields["authorid"] || "00000001";
+        newCard.nickname = fields["nickname"] || "노란 조커";
+        newCard.icon = fields["icon"] || "icon/icon1.png";
+        newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
+        newCard.createtime = new Date();
+        newCard.content = fields["content"];
+        newCard.partynumber = fields["partynumber"] || "1";
+        newCard.chattingtime = newCard.createtime;
+        newCard.status = "1";
+        newCard.chatting = "temp";
 
         _insertCard(req, newCard, function (error, results) {
             result["error"] = error;
@@ -82,7 +93,8 @@ exports.read = function(req, res) {
 
     console.log("where: " + JSON.stringify(where));
     _findCard(req, where, function (err, results) {
-        res.json({error: err, results: results});
+        // res.json({error: err, results: results});
+        res.json(results);
     });
 };
 
