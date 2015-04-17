@@ -10,12 +10,11 @@ exports.create = function (req, res) {
 
 exports.read = function (req, res){
     var getquery = req.params.getquery;
-    var ObjectID = require('mongodb').ObjectID;
-    var objid = new ObjectID(getquery);
-    var where = {articleid: objid};
+    console.log("getquery: " + getquery);
+    var where = {articleid: getquery};
 
     _findChat(req, where, function (error, results) {
-        res.json( {error: error, results : results});
+        res.json(results);
     });
 };
 
@@ -38,7 +37,7 @@ function _insertChat(req, body, callback) {
 
 function _findChat(req, where, callback) {
     where = where || {};
-
+    console.log("where: " + JSON.stringify(where));
     req.db.collection('chats', function(err, collection) {
        collection.find(where).toArray(callback);
     });
