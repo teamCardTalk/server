@@ -43,6 +43,9 @@ amqp.connect('amqp://localhost', function(err, conn) {
     on_connect(err, conn);
 });
 
+//var mqtt = require('mqtt');
+//var mqttClient = mqtt.connect('mqtt://localhost');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -59,7 +62,7 @@ app.use(function(req, res, next) {
     req["db"] = db;
     req["redis"] = redis;
     req["amqpconn"] = amqpconn;
-    console.log(amqpconn);
+    //req["mqttClient"] = mqttClient;
     next();
 });
 

@@ -7,7 +7,7 @@ var room = require('../handlers/room.js');
 
 
 router.post('/join', room.join);
-router.post('/', room.create);
+//router.post('/', room.create);
 //router.post('/', room.create);
 //router.get('/', room.read);
 //router.put('/', room.update);

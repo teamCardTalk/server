@@ -6,10 +6,12 @@ exports.create = function (req, res) {
         roomID = body.roomid,
         exchange = 'chat',
         amqpconn = req.amqpconn;
-
+//roomid 랑 articleid 랑 통일해야함.
+    // apns gcm 등록 해야함.
     amqpconn.createChannel(function(err, ch) {
         if (err !== null) console.error(err);
         ch.publish(exchange, roomID, new Buffer(JSON.stringify(body)));
+        notifyChatMessage(JSON.stringify(body), req);
         ch.close();
 
         _insertChat(req, body, function (error, results) {
@@ -52,3 +54,33 @@ function _findChat(req, where, callback) {
        collection.find(where).toArray(callback);
     });
 }
+
+function notifyChatMessage(msg, req) {
+    var msgObj = JSON.parse(msg),
+        roomid = msgObj.roomid,
+        redis = req.redis;
+
+    redis.smembers(roomid, function(err, replies) {
+        if (err !== null) console.error(err);
+        replies.forEach(function (userID) {
+            redis.hgetall(userID, function(err, userInfo) {
+                if (err !== null) console.error(err);
+                var deviceType = userInfo.deviceType,
+                    deviceId = userInfo.deviceId;
+
+                notification[deviceType](deviceId, msg);
+            });
+        });
+    });
+
+
+}
+
+var notification = {
+    ios : function (deviceId, message) {
+        console.log('notification ios:' + deviceId + '=' + message );
+    },
+    android : function (deviceId, message) {
+        console.log('notification android:' + deviceId + '=' + message );
+    }
+};

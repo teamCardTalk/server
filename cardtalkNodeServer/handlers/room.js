@@ -31,22 +31,32 @@ exports.join = function (req, res) {
 };
 
 
-exports.create = function (req, res) {
-    var body = req.body,
-        amqpconn = req.amqpconn,
-        roomID = body.roomid,
-        exchange = 'notification';
+//exports.create = function (req, res) {
+//    var body = req.body,
+//        amqpconn = req.amqpconn,
+//        roomID = body.roomid,
+//        exchange = 'notification';
+//
+//    amqpconn.createChannel(function(err, ch) {
+//        if (err !== null) console.error(err);
+//
+//        ch.assertQueue(roomID, {durable:true}, function(err, ok) {
+//            if (err !== null) console.error(err);
+//            ch.bindQueue(roomID, exchange, roomID, {}, function(err, ok) {
+//                console.log("bind room ok!");
+//                res.end("bidn room okd!");
+//                ch.close();
+//            });
+//        });
+//    });
+//
+//    amqpconn.createChannel(function(err, ch) {
+//        if (err !== null) console.error(err);
+//
+//        ch.consume(roomID, notifyChatMessage, {noAck:true}, function(err) {
+//            console.log(' Notify Chat Message ');
+//        });
+//    });
+//};
 
-    amqpconn.createChannel(function(err, ch) {
-        if (err !== null) console.error(err);
 
-        ch.assertQueue(roomID, {durable:true}, function(err, ok) {
-            if (err !== null) console.error(err);
-            ch.bindQueue(roomID, exchange, roomID, {}, function(err, ok) {
-                console.log("bind room ok!");
-                res.end("bidn room okd!");
-                ch.close();
-            });
-        });
-    });
-};
