@@ -2,9 +2,19 @@
 process.env.TZ = 'Asia/Seoul';
 
 exports.create = function (req, res) {
-    var body = req.body;
-    _insertChat(req, body, function (error, results) {
-        res.json( {error: error, results: results});
+    var body = req.body,
+        roomID = body.roomid,
+        exchange = 'chat',
+        amqpconn = req.amqpconn;
+
+    amqpconn.createChannel(function(err, ch) {
+        if (err !== null) console.error(err);
+        ch.publish(exchange, roomID, new Buffer(JSON.stringify(body)));
+        ch.close();
+
+        _insertChat(req, body, function (error, results) {
+            res.json( {error: error, results: results});
+        });
     });
 };
 
