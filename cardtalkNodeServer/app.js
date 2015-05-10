@@ -51,6 +51,7 @@ app.use('/memo', memo);
 app.use('/card', card);
 app.use('/image', image);
 app.use('/chat', chat);
+app.use('/room', room);
 
 
 // catch 404 and forward to error handler
