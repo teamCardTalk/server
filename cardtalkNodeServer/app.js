@@ -11,6 +11,12 @@ var memo = require('./routes/memo');
 var card = require('./routes/card');
 var image = require('./routes/image');
 var chat = require('./routes/chat');
+var room = require('./routes/room');
+var login = require('./routes/login');
+
+
+
+var redis = require('redis').createClient();
 
 var app = express();
 
@@ -18,7 +24,7 @@ var mongo = require('mongodb');
 var Server = mongo.Server,
     Db = mongo.Db;
 
-var server = new Server('localhost', 38000, {auto_reconnect: true});
+var server = new Server('localhost', 27017, {auto_reconnect: true});
 
 db = new Db('test', server);
 
@@ -27,6 +33,18 @@ db.open(function(err, db) {
         console.log("Connected to 'testdb' datbase");
     }
 });
+
+var amqp = require('amqplib/callback_api');
+var amqpconn;
+
+amqp.connect('amqp://localhost', function(err, conn) {
+    amqpconn = conn;
+
+    on_connect(err, conn);
+});
+
+//var mqtt = require('mqtt');
+//var mqttClient = mqtt.connect('mqtt://localhost');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,6 +60,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function(req, res, next) {
     req["db"] = db;
+    req["redis"] = redis;
+    req["amqpconn"] = amqpconn;
+    //req["mqttClient"] = mqttClient;
     next();
 });
 
@@ -51,7 +72,8 @@ app.use('/memo', memo);
 app.use('/card', card);
 app.use('/image', image);
 app.use('/chat', chat);
-
+app.use('/room', room);
+app.use('/login', login);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -84,5 +106,30 @@ app.use(function(err, req, res, next) {
   });
 });
 
+
+function on_connect(err, conn) {
+    if (err !== null) return bail(err);
+    process.once('SIGINT', function() { conn.close(); });
+
+    var exopts = {durable:true};
+    var rootEX = 'chat';
+    var notificationEX = 'notification';
+    var pushEX = 'push';
+
+    conn.createChannel(function (err, ch) {
+        if (err !== null) return bail(err, conn);
+        ch.assertExchange(rootEX, 'fanout', exopts, function(err, ok) {
+            ch.assertExchange(notificationEX, 'direct', exopts, function (err, ok) {
+                ch.assertExchange(pushEX, 'direct', exopts, function(err, ok) {
+                    ch.bindExchange(notificationEX, rootEX, '', {}, function(err, ok) {
+                        ch.bindExchange(pushEX, rootEX, '', {}, function(err, ok) {
+                            console.log('init push server');
+                        });
+                    });
+                });
+            });
+        });
+    });
+}
 
 module.exports = app;

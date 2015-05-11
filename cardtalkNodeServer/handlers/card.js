@@ -3,8 +3,11 @@ var formidable = require('formidable'),
     path = require('path'),
     mime = require('mime'),
     fs = require('fs'),
+<<<<<<< HEAD
     dateformat = require('dateformat'),
     querystring = require('querystring');
+=======
+>>>>>>> c208ad2ab5d247b08bdeaf71caa59711adb6f297
 
 //var UPLOAD_FOLDER = __dirname + "/data";
 var UPLOAD_FOLDER = "./data";
@@ -61,11 +64,15 @@ exports.create = function (req, res) {
     });
 
     form.parse(req, function(err, fields, files) {
+        var now = new Date();
         newCard.authorid = fields["authorid"] || "00000001";
         newCard.nickname = fields["nickname"] || "노란 조커";
         newCard.icon = fields["icon"] || "icon/icon1.png";
         newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
-        newCard.createtime = dateformat(new Date(), 'yy-mm-dd HH:MM');
+<<<<<<< HEAD
+=======
+        newCard.createtime = dateformat(now, 'yy-mm-dd HH:MM');
+>>>>>>> c208ad2ab5d247b08bdeaf71caa59711adb6f297
         newCard.content = fields["content"];
         newCard.partynumber = fields["partynumber"] || "1";
         newCard.chattingtime = newCard.createtime;
