@@ -1,5 +1,6 @@
 // set timezone
 var gcm = require('node-gcm');
+var dateformat = require('dateformat');
 
 process.env.TZ = 'Asia/Seoul';
 
@@ -10,6 +11,10 @@ exports.create = function (req, res) {
         amqpconn = req.amqpconn;
 //roomid 랑 articleid 랑 통일해야함.
     // apns gcm 등록 해야함.
+
+    body.time = dateformat(new Date(), 'yy-mm-dd HH:MM');
+
+
     amqpconn.createChannel(function(err, ch) {
         if (err !== null) console.error(err);
         ch.publish(exchange, roomID, new Buffer(JSON.stringify(body)));
@@ -34,18 +39,9 @@ exports.read = function (req, res){
 
 function _insertChat(req, body, callback) {
     body = typeof body === 'string' ? JSON.parse(body) : body;
-    console.log("body.nickname: " + JSON.stringify(body.nickname));
-    var chat = {
-        articleid : body.articleid,
-        nickname : body.nickname,
-        userid : body.userid,
-        icon : body.icon,
-        content : body.content,
-        time : new Date().toLocaleString()
-    };
 
     req.db.collection('chats', function(err, collection) {
-       collection.insert(chat, {safe:true}, callback);
+       collection.insert(body, {safe:true}, callback);
     });
 }
 
@@ -64,7 +60,7 @@ function notifyChatMessage(msg, req) {
 
     redis.smembers(roomid, function(err, replies) {
         if (err !== null) console.error(err);
-        console.log(replies);
+        //console.log(replies);
 
         replies.map(function (userID) {
             redis.hgetall(userID, function(err, userInfo) {
@@ -99,7 +95,7 @@ var notification = {
         var registrationIds = [];
         registrationIds.push(deviceId);
         sender.send(msg, registrationIds, 4, function(err, result) {
-            console.log(result);
+            //console.log(result);
         });
     }
 };
