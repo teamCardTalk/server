@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', 'dateformat', '--save' ]
+2 info using npm@2.8.3
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /root/cardTalk/server/cardtalkNodeServer/package.json
+6 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/body-parser/package.json
+7 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/cookie-parser/package.json
+8 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/debug/package.json
+9 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/express/package.json
+10 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/formidable/package.json
+11 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/jade/package.json
+12 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/mime/package.json
+13 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/mongodb/package.json
+14 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/mongodb-core/package.json
+15 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/morgan/package.json
+16 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/nedb/package.json
+17 verbose installManyTop reading scoped package data from /root/cardTalk/server/cardtalkNodeServer/node_modules/serve-favicon/package.json
+18 verbose readDependencies loading dependencies from /root/cardTalk/server/cardtalkNodeServer/package.json
+19 silly cache add args [ 'dateformat', null ]
+20 verbose cache add spec dateformat
+21 silly cache add parsed spec { raw: 'dateformat',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'dateformat',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed dateformat@*
+23 verbose addNamed "*" is a valid semver range for dateformat
+24 silly addNameRange { name: 'dateformat', range: '*', hasData: false }
+25 silly mapToRegistry name dateformat
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/dateformat
+29 verbose addNameRange registry:https://registry.npmjs.org/dateformat not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/dateformat
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 17:25:53
+33 verbose request id 21455e49f284a823
+34 http request GET https://registry.npmjs.org/dateformat
+35 info retry will retry, error on last attempt: Error: read ECONNRESET
+36 info attempt registry request try #2 at 17:26:03
+37 http request GET https://registry.npmjs.org/dateformat
+38 info retry will retry, error on last attempt: Error: read ECONNRESET
+39 info attempt registry request try #3 at 17:27:03
+40 http request GET https://registry.npmjs.org/dateformat
+41 verbose stack Error: read ECONNRESET
+41 verbose stack     at errnoException (net.js:905:11)
+41 verbose stack     at TCP.onread (net.js:559:19)
+42 verbose cwd /root/cardTalk/server/cardtalkNodeServer
+43 error Linux 3.2.0-35-generic
+44 error argv "node" "/usr/bin/npm" "install" "dateformat" "--save"
+45 error node v0.10.38
+46 error npm  v2.8.3
+47 error code ECONNRESET
+48 error errno ECONNRESET
+49 error syscall read
+50 error network read ECONNRESET
+50 error network This is most likely not a problem with npm itself
+50 error network and is related to network connectivity.
+50 error network In most cases you are behind a proxy or have bad network settings.
+50 error network
+50 error network If you are behind a proxy, please make sure that the
+50 error network 'proxy' config is set properly.  See: 'npm help config'
+51 verbose exit [ 1, true ]

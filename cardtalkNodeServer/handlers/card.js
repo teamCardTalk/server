@@ -3,6 +3,7 @@ var formidable = require('formidable'),
     path = require('path'),
     mime = require('mime'),
     fs = require('fs'),
+    dateformat = require('dateformat'),
     querystring = require('querystring');
 
 //var UPLOAD_FOLDER = __dirname + "/data";
@@ -64,7 +65,7 @@ exports.create = function (req, res) {
         newCard.nickname = fields["nickname"] || "노란 조커";
         newCard.icon = fields["icon"] || "icon/icon1.png";
         newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
-        newCard.createtime = new Date().toLocaleString();
+        newCard.createtime = dateformat(new Date(), 'yy-mm-dd HH:MM');
         newCard.content = fields["content"];
         newCard.partynumber = fields["partynumber"] || "1";
         newCard.chattingtime = newCard.createtime;
