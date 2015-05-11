@@ -1,4 +1,6 @@
 // set timezone
+var gcm = require('node-gcm');
+
 process.env.TZ = 'Asia/Seoul';
 
 exports.create = function (req, res) {
@@ -62,7 +64,9 @@ function notifyChatMessage(msg, req) {
 
     redis.smembers(roomid, function(err, replies) {
         if (err !== null) console.error(err);
-        replies.forEach(function (userID) {
+        console.log(replies);
+
+        replies.map(function (userID) {
             redis.hgetall(userID, function(err, userInfo) {
                 if (err !== null) console.error(err);
                 var deviceType = userInfo.deviceType,
@@ -72,8 +76,6 @@ function notifyChatMessage(msg, req) {
             });
         });
     });
-
-
 }
 
 var notification = {
@@ -82,5 +84,22 @@ var notification = {
     },
     android : function (deviceId, message) {
         console.log('notification android:' + deviceId + '=' + message );
+
+        var msg = new gcm.Message({
+            collapseKey : 'demo',
+            delayWhileIdle : true,
+            timeToLive : 3,
+            data : {
+                key1 : message
+            }
+        });
+
+        var serverAccessKey = 'AIzaSyCi31Rn3MEMZ_eQsk_yoBxiLIGpjAeBCvk';
+        var sender = new gcm.Sender(serverAccessKey);
+        var registrationIds = [];
+        registrationIds.push(deviceId);
+        sender.send(msg, registrationIds, 4, function(err, result) {
+            console.log(result);
+        });
     }
 };
