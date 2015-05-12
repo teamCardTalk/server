@@ -24,7 +24,7 @@ var mongo = require('mongodb');
 var Server = mongo.Server,
     Db = mongo.Db;
 
-var server = new Server('localhost', 27017, {auto_reconnect: true});
+var server = new Server('localhost', 38000, {auto_reconnect: true});
 
 db = new Db('test', server);
 
@@ -108,7 +108,7 @@ app.use(function(err, req, res, next) {
 
 
 function on_connect(err, conn) {
-    if (err !== null) return bail(err);
+    if (err !== null) console.error(err);
     process.once('SIGINT', function() { conn.close(); });
 
     var exopts = {durable:true};
@@ -117,7 +117,7 @@ function on_connect(err, conn) {
     var pushEX = 'push';
 
     conn.createChannel(function (err, ch) {
-        if (err !== null) return bail(err, conn);
+        if (err !== null) console.error(err);
         ch.assertExchange(rootEX, 'fanout', exopts, function(err, ok) {
             ch.assertExchange(notificationEX, 'direct', exopts, function (err, ok) {
                 ch.assertExchange(pushEX, 'direct', exopts, function(err, ok) {
