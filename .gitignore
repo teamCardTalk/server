@@ -1,2 +1,4 @@
 .DS_Store*
 ./cardtalkNodeServer/node_modules/
+*.swp
+cardtalkNodeServer/node_modules
