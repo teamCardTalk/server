@@ -14,13 +14,13 @@ exports.read = function(req, res) {
     if (typeof photo !== 'undefined') {
     	console.log(photo);
         res.sendfile(photo,
-	        { root: './data'},
+	        { root: '../data'},
 	        function(err) {
 	            if (err) res.json(err);
 	        });
     } else if (typeof icon !== 'undefined') {
         res.sendfile(icon,
-	        { root: './icon'},
+	        { root: '../icon'},
 	        function(err) {
 	            if (err) res.json(err);
 	        });
