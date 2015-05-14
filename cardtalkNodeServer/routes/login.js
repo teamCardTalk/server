@@ -7,9 +7,13 @@ var login = require('../handlers/login.js');
 
 
 module.exports = function(passport) {
-    router.post('/signup', passport.authenticate('signup', {failureFlash : true}), login.signUp);
-    router.post('/', passport.authenticate('login', {failureFlash : true}), login.login);
+    router.post('/signup', passport.authenticate('signup', {
+        failureFlash : true
+    }), login.signUp);
 
+    router.post('/', passport.authenticate('login', {
+        failureFlash : true
+    }), login.login);
 
     return router;
 };

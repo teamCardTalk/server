@@ -14,9 +14,9 @@ exports.signUp = function(req, res) {
         userID = body.userid,
         pwd = body.password,
         deviceType = body.deviceType,
-        deviceId = body.deviceId;
+        uid = body.uid;
 
-    redis.hmset(userID, {'deviceType' : deviceType, 'deviceId' : deviceId}, function(err, obj) {
+    redis.hmset(userID, {'deviceType' : deviceType, 'uid' : uid}, function(err, obj) {
         console.log('redis hmset ' + obj);
     });
 
@@ -37,11 +37,11 @@ exports.signUp = function(req, res) {
 };
 
 exports.loginFail = function(req, res) {
-
+    res.end({'message' : 'login fail'});
 };
 
 exports.signupFail = function(req, res) {
-
+    res.end({'message' : 'signup fail'});
 };
 
 exports.login = function(req, res) {
