@@ -36,8 +36,15 @@ exports.signUp = function(req, res) {
 
 };
 
+exports.loginFail = function(req, res) {
+
+};
+
+exports.signupFail = function(req, res) {
+
+};
 
 exports.login = function(req, res) {
-
+    res.end(JSON.stringify(req.user));
 };
 
