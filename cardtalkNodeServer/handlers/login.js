@@ -12,7 +12,6 @@ exports.signUp = function(req, res) {
         redis = req.redis,
         body = req.body,
         userID = body.userid,
-        pwd = body.password,
         deviceType = body.deviceType,
         uid = body.uid;
 
@@ -45,6 +44,10 @@ exports.signupFail = function(req, res) {
 };
 
 exports.login = function(req, res) {
-    res.end(JSON.stringify(req.user));
+    res.end(JSON.stringify(req.session));
 };
 
+exports.getLogin = function(req, res) {
+    console.log("get LogIn");
+    //res.render('login.ejs', { message: req.flash('loginMessage') });
+};

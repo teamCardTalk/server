@@ -12,8 +12,27 @@ module.exports = function(passport) {
     }), login.signUp);
 
     router.post('/', passport.authenticate('login', {
-        failureFlash : true
+        failureFlash : true,
+        failureRedirect : '/login',
+        successRedirect : '/login/profile'
     }), login.login);
+
+    router.get('/', login.getLogin);
+    router.get('/profile', isLoggedIn, function(req, res) {
+        //res.send(JSON.stringify(req.user));
+        res.end(JSON.stringify(req.session));
+    });
 
     return router;
 };
+
+function isLoggedIn(req, res, next) {
+
+    if (req.isAuthenticated()) {
+        console.log('logged in');
+        return next();
+    }
+
+    res.end('nonononono');
+}
+

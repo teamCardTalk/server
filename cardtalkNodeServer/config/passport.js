@@ -9,6 +9,22 @@ var User = require('../model/user.js');
 
 module.exports = function(passport) {
 
+    passport.serializeUser(function(user, done) {
+        console.log('serialize');
+        done(null, user);
+    });
+
+    passport.deserializeUser(function(user, done) {
+        console.log('deserialize');
+        userInfo = {
+            userid : user.userid,
+            nickname    : user.nickname,
+            icon        : user.icon
+        };
+        done(null, userInfo);
+
+        //findByID 모델 만들어서.
+    });
 
     passport.use('signup', new LocalStrategy({
         usernameField: 'userid',
@@ -68,16 +84,6 @@ module.exports = function(passport) {
 
     }));
 
-    passport.serializeUser(function(user, done) {
-        console.log('serialize');
-        done(null, user);
-    });
 
-    passport.deserializeUser(function(user, done) {
-        console.log('deserialize');
-        done(null, user);
-
-        //findByID 모델 만들어서.
-    });
 
 };

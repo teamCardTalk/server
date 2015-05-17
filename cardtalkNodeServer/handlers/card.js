@@ -4,15 +4,18 @@ var formidable = require('formidable'),
     mime = require('mime'),
     fs = require('fs'),
     dateformat = require('dateformat'),
-    querystring = require('querystring');
+    querystring = require('querystring'),
+    Card = require('../model/card.js');
 
 //var UPLOAD_FOLDER = __dirname + "/data";
-var UPLOAD_FOLDER = "./data";
+var UPLOAD_FOLDER = "../data";
 
 // set timezone
 process.env.TZ = 'Asia/Seoul';
 
 exports.create = function (req, res) {
+    var card = new Card();
+
     var form = new formidable.IncomingForm(),
         files = [],
         fields = [],
@@ -57,27 +60,42 @@ exports.create = function (req, res) {
 
         newCard.file = fileInfos;
 
-        console.log('newCard - ' + JSON.stringify(newCard));
+        card.file = fileInfos;
+
+        console.log('newCard - ' + JSON.stringify(card));
     });
 
     form.parse(req, function(err, fields, files) {
         var now = new Date();
-        newCard.authorid = fields["authorid"] || "00000001";
-        newCard.nickname = fields["nickname"] || "노란 조커";
-        newCard.icon = fields["icon"] || "icon/icon1.png";
-        newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
-        newCard.createtime = dateformat(now, 'yy-mm-dd HH:MM');
-        newCard.content = fields["content"];
-        newCard.partynumber = fields["partynumber"] || "1";
-        newCard.chattingtime = newCard.createtime;
-        newCard.status = "1";
-        newCard.chatting = "temp";
+        var user = req.user;
 
-        _insertCard(req, newCard, function (error, results) {
-            result["error"] = error;
-            result["results"] = results;
-            res.end(JSON.stringify(newCard));
+        card.author = user;
+        card.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
+        card.createtime = dateformat(now, 'yy-mm-dd HH:MM');
+        card.content = fields["content"];
+        card.partynumber = fields["partynumber"] || "1";
+        card.chattingtime = newCard.chattingtime = newCard.createtime;
+        card.status = "1";
+
+        //newCard.authorid = fields["authorid"] || "00000001";
+        //newCard.nickname = fields["nickname"] || "노란 조커";
+        //newCard.icon = fields["icon"] || "icon/icon1.png";
+        //newCard.title = fields["title"] || "노란 조커의 초롱초롱한 새장";
+        //newCard.createtime = dateformat(now, 'yy-mm-dd HH:MM');
+        //newCard.content = fields["content"];
+        //newCard.partynumber = fields["partynumber"] || "1";
+        //newCard.chattingtime = newCard.createtime;
+        //newCard.status = "1";
+
+        card.save(function(err) {
+            res.end(JSON.stringify(card));
         });
+
+        //_insertCard(req, newCard, function (error, results) {
+        //    result["error"] = error;
+        //    result["results"] = results;
+        //    res.end(JSON.stringify(newCard));
+        //});
     });
 };
 
