@@ -23,6 +23,6 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-
-    res.end('nonononono');
+    var host = req.get('host');
+    res.redirect(host + '/login');
 }

@@ -1,6 +1,5 @@
 
 var mongoose = require('mongoose');
-var bcrypt = require('bcrypt-nodejs');
 var User = require('./user');
 
 var cardSchema = mongoose.Schema({
@@ -20,13 +19,6 @@ var cardSchema = mongoose.Schema({
     chattingtime: String,
     status: String
 });
-
-
-cardSchema.methods.setAuthor = function(user) {
-    this.author.userid = user.userid;
-    this.author.nickname = user.nickname;
-    this.author.icon = user.icon;
-};
 
 //
 //cardSchema.methods.generateHash = function(password) {

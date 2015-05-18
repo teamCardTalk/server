@@ -105,16 +105,19 @@ exports.read = function(req, res) {
     var where = {status: "1"};
 
     if (typeof _id !== 'undefined') {
-        var ObjectID = require('mongodb').ObjectID;
-        var objid = new ObjectID(_id);
+        var objid = require('mongoose').Types.ObjectId(_id);
         where = {$and: [{status: "1"},{_id: objid}]};
     }
 
     console.log("where: " + JSON.stringify(where));
-    _findCard(req, where, function (err, results) {
-        // res.json({error: err, results: results});
+
+    Card.find(where, function (err, results) {
         res.json(results);
     });
+    //_findCard(req, where, function (err, results) {
+    //    // res.json({error: err, results: results});
+    //    res.json(results);
+    //});
 };
 
 exports.update = function(req, res) {
@@ -124,14 +127,16 @@ exports.update = function(req, res) {
     var body = req.body;
 
     if (typeof _id !== 'undefined') {
-        var ObjectID = require('mongodb').ObjectID;
-        var objid = new ObjectID(_id);
+        var objid = require('mongoose').Types.ObjectId(_id);
         where = {_id: objid};
     }
 
-    _updateCard(req, where, body, function(error, results) {
-        res.json( {error: error, results : results});
+    Card.update(where, body, function(err, results) {
+        res.json( {error: err, results: results });
     });
+    //_updateCard(req, where, body, function(error, results) {
+    //    res.json( {error: error, results : results});
+    //});
 };
 
 exports.remove = function (req, res) {
@@ -141,41 +146,44 @@ exports.remove = function (req, res) {
     var body = {status : "0"};
 
     if (typeof _id !== 'undefined') {
-        var ObjectID = require('mongodb').ObjectID;
-        var objid = new ObjectID(_id);
+        var objid = require('mongoose').Types.ObjectId(_id);
         where = {_id: objid};
     }
 
-    _removeCard(req, where, body, function (error, results) {
-        res.json({ error : error, results : results});
+    Card.find(where).remove(function(err, results) {
+        res.json({error: err, results : results});
     });
+
+    //_removeCard(req, where, body, function (error, results) {
+    //    res.json({ error : error, results : results});
+    //});
 };
 
-function _insertCard(req, card, callback) {
-    req.db.collection('cards', function(err, collection) {
-        collection.insert(card, {safe:true}, callback);
-    });
-}
-
-function _findCard(req, where, callback) {
-    where = where || {};
-    console.log("where: " + JSON.stringify(where));
-    req.db.collection('cards', function(err, collection) {
-        collection.find(where).toArray(callback);
-    });
-}
-
-function _updateCard(req, where, body, callback) {
-    console.log("where: " + JSON.stringify(where));
-    console.log("body: " + JSON.stringify(body));
-    req.db.collection('cards', function(err, collection) {
-        collection.update(where, {$set : body}, callback);
-    });
-}
-
-function _removeCard(req, where, body, callback) {
-    req.db.collection('cards', function(err, collection) {
-        collection.update(where, {$set : body}, callback);
-        //collection.remove(where, callback);
-    });
-}
+//function _insertCard(req, card, callback) {
+//    req.db.collection('cards', function(err, collection) {
+//        collection.insert(card, {safe:true}, callback);
+//    });
+//}
+//
+//function _findCard(req, where, callback) {
+//    where = where || {};
+//    console.log("where: " + JSON.stringify(where));
+//    req.db.collection('cards', function(err, collection) {
+//        collection.find(where).toArray(callback);
+//    });
+//}
+//
+//function _updateCard(req, where, body, callback) {
+//    console.log("where: " + JSON.stringify(where));
+//    console.log("body: " + JSON.stringify(body));
+//    req.db.collection('cards', function(err, collection) {
+//        collection.update(where, {$set : body}, callback);
+//    });
+//}
+//
+//function _removeCard(req, where, body, callback) {
+//    req.db.collection('cards', function(err, collection) {
+//        collection.update(where, {$set : body}, callback);
+//        //collection.remove(where, callback);
+//    });
+//}

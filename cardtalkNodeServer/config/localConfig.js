@@ -16,9 +16,10 @@ module.exports = {
     },
     'redis' : {
         'host' : 'localhost',
-        'port' : 0
+        'port' : 6379
     },
     'amqp' : {
-
+        'host' : 'localhost',
+        'port' : 15672
     }
 };

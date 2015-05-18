@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var mongoose = require('mongoose');
-var config = require('./config/config')
+var localConfig = require('./config/localConfig')
 
 var passport = require('passport');
 var redis = require('redis').createClient(),
@@ -14,26 +14,26 @@ var redis = require('redis').createClient(),
     RedisStore = require('connect-redis')(session);
 
 
-
-var mongo = require('mongodb'),
-    Server = mongo.Server,
-    Db = mongo.Db;
+//
+//var mongo = require('mongodb'),
+//    Server = mongo.Server,
+//    Db = mongo.Db;
 
 var amqp = require('amqplib/callback_api');
 var amqpconn;
 
 var app = module.exports = express();
 
-var writeServer = new Server('localhost', 27017, {auto_reconnect: true}),
-    writeDb = new Db('test', writeServer);
+//var writeServer = new Server('localhost', 27017, {auto_reconnect: true}),
+//    writeDb = new Db('test', writeServer);
+//
+//writeDb.open(function(err, db) {
+//    if(!err) {
+//        console.log("Connected to 'testdb' write database");
+//    }
+//});
 
-writeDb.open(function(err, db) {
-    if(!err) {
-        console.log("Connected to 'testdb' write database");
-    }
-});
-
-mongoose.connect(config.mongo.url, config.mongo.opt);
+mongoose.connect(localConfig.mongo.url, localConfig.mongo.opt);
 
 amqp.connect('amqp://localhost', function(err, conn) {
     amqpconn = conn;
@@ -42,11 +42,11 @@ amqp.connect('amqp://localhost', function(err, conn) {
 });
 
 app.use(function(req, res, next) {
-    req["db"] = writeDb;
+    //req["db"] = writeDb;
     // write read 나눠줘야함.
     req["redis"] = redis;
     req["amqpconn"] = amqpconn;
-    req["writeDb"] = writeDb;
+    //req["writeDb"] = writeDb;
     //req["mqttClient"] = mqttClient;
     next();
 });
@@ -64,8 +64,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
     secret : '123456789QWERT',
     store : new RedisStore({
-        //host: '127.0.0.1',
-        //port: 6379
         client : redis
     })
 }));

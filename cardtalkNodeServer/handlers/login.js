@@ -49,5 +49,12 @@ exports.login = function(req, res) {
 
 exports.getLogin = function(req, res) {
     console.log("get LogIn");
+
+    res.end('login Fail');
     //res.render('login.ejs', { message: req.flash('loginMessage') });
+};
+
+exports.logout = function(req, res) {
+    req.logout();
+    res.end('log out');
 };

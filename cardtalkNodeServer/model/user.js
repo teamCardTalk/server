@@ -10,7 +10,8 @@ var userSchema = mongoose.Schema({
     nickname    : String,
     icon        : String,
     uid         : String,
-    deviceType  : String
+    deviceType  : String,
+    participatingRooms : [ String ]
 });
 
 
