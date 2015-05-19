@@ -21,5 +21,8 @@ module.exports = {
     'amqp' : {
         'host' : 'localhost',
         'port' : 15672
+    },
+    'mqtt' : {
+
     }
 };

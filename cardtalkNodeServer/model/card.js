@@ -6,7 +6,7 @@ var cardSchema = mongoose.Schema({
     author: {
         userid : String,
         nickname : String,
-        icon : String,
+        icon : String
     },
     file: [{
         path: String,
