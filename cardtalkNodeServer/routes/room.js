@@ -6,7 +6,8 @@ var router = express.Router();
 var room = require('../handlers/room.js');
 
 
-router.post('/join', isLoggedIn, room.join);
+router.get('/join/:articleid', isLoggedIn, room.join);
+router.get('/out/:articleid', isLoggedIn, room.out);
 //router.post('/', room.create);
 //router.post('/', room.create);
 //router.get('/', room.read);

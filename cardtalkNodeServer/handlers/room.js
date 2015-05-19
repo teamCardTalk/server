@@ -5,9 +5,9 @@
 
 
 exports.join = function (req, res) {
-    var body = req.body,
-        userID = body.userid,
-        roomID = body.roomid,
+
+    var userID = req.user.userid,
+        roomID = req.params.articleid,
         redis = req.redis,
         amqpconn = req.amqpconn;
 
@@ -23,11 +23,44 @@ exports.join = function (req, res) {
         ch.assertExchange(exchange, 'direct', {durable:true}, function(err, ok) {
             ch.bindQueue(userID, exchange, roomID, {durable:true}, function(err, ok) {
                 console.log('join room %s to %s', userID, roomID);
-                res.end('join room!');
+                var response = {
+                    user : req.user,
+                    articleid : roomID
+                };
+                res.json(response);
                 ch.close();
             });
         });
     });
+};
+
+exports.out = function(req, res) {
+
+    var userID = req.user.userid,
+        roomID = req.params.articleid,
+        redis = req.redis,
+        amqpconn = req.amqpconn;
+
+    var exchange = 'push';
+
+    redis.srem(roomID, userID, function(err, reply) {
+        console.log('srem ok ' + reply);
+    });
+
+    amqpconn.createChannel(function(err, ch) {
+        if (err !== null) console.error(err);
+
+        ch.unbindQueue(userID, exchange, roomID, {durable : true}, function(err, ok) {
+            console.log('get out of room %s', roomID);
+            var response = {
+                user : req.user,
+                articleid : roomID
+            };
+            res.json(response);
+            ch.close();
+        });
+    })
+
 };
 
 

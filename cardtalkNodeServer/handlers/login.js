@@ -7,6 +7,8 @@ var util = require('util'),
     fs = require('fs'),
     querystring = require('querystring');
 
+var loginError = 1;
+
 exports.signUp = function(req, res) {
     var amqpconn = req.amqpconn,
         redis = req.redis,
@@ -49,8 +51,8 @@ exports.login = function(req, res) {
 
 exports.getLogin = function(req, res) {
     console.log("get LogIn");
-
-    res.end('login Fail');
+//status
+    res.json({error : loginError});
     //res.render('login.ejs', { message: req.flash('loginMessage') });
 };
 

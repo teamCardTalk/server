@@ -62,7 +62,6 @@ exports.create = function (req, res) {
 
         card.file = fileInfos;
 
-        console.log('newCard - ' + JSON.stringify(card));
     });
 
     form.parse(req, function(err, fields, files) {
@@ -87,8 +86,10 @@ exports.create = function (req, res) {
         //newCard.chattingtime = newCard.createtime;
         //newCard.status = "1";
 
-        card.save(function(err) {
+        card.save(function(err, card) {
+
             res.end(JSON.stringify(card));
+
         });
 
         //_insertCard(req, newCard, function (error, results) {
@@ -158,6 +159,7 @@ exports.remove = function (req, res) {
     //    res.json({ error : error, results : results});
     //});
 };
+
 
 //function _insertCard(req, card, callback) {
 //    req.db.collection('cards', function(err, collection) {
