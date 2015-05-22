@@ -4,38 +4,36 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var flash = require('connect-flash');
+var mongoose = require('mongoose');
+var localConfig = require('./config/localConfig')
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var memo = require('./routes/memo');
-var card = require('./routes/card');
-var image = require('./routes/image');
-var chat = require('./routes/chat');
-var room = require('./routes/room');
-var login = require('./routes/login');
-
+var passport = require('passport');
+var redis = require('redis').createClient(),
+    session = require('express-session'),
+    RedisStore = require('connect-redis')(session);
 
 
-var redis = require('redis').createClient();
-
-var app = express();
-
-var mongo = require('mongodb');
-var Server = mongo.Server,
-    Db = mongo.Db;
-
-var server = new Server('localhost', 38000, {auto_reconnect: true});
-
-db = new Db('test', server);
-
-db.open(function(err, db) {
-    if(!err) {
-        console.log("Connected to 'testdb' datbase");
-    }
-});
+//
+//var mongo = require('mongodb'),
+//    Server = mongo.Server,
+//    Db = mongo.Db;
 
 var amqp = require('amqplib/callback_api');
 var amqpconn;
+
+var app = module.exports = express();
+
+//var writeServer = new Server('localhost', 27017, {auto_reconnect: true}),
+//    writeDb = new Db('test', writeServer);
+//
+//writeDb.open(function(err, db) {
+//    if(!err) {
+//        console.log("Connected to 'testdb' write database");
+//    }
+//});
+
+mongoose.connect(localConfig.mongo.url, localConfig.mongo.opt);
 
 amqp.connect('amqp://localhost', function(err, conn) {
     amqpconn = conn;
@@ -43,28 +41,45 @@ amqp.connect('amqp://localhost', function(err, conn) {
     on_connect(err, conn);
 });
 
-//var mqtt = require('mqtt');
-//var mqttClient = mqtt.connect('mqtt://localhost');
+app.use(function(req, res, next) {
+    //req["db"] = writeDb;
+    // write read 나눠줘야함.
+    req["redis"] = redis;
+    req["amqpconn"] = amqpconn;
+    //req["writeDb"] = writeDb;
+    //req["mqttClient"] = mqttClient;
+    next();
+});
 
-// view engine setup
+require('./config/passport')(passport);
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+    secret : '123456789QWERT',
+    store : new RedisStore({
+        client : redis
+    })
+}));
 
-app.use(function(req, res, next) {
-    req["db"] = db;
-    req["redis"] = redis;
-    req["amqpconn"] = amqpconn;
-    //req["mqttClient"] = mqttClient;
-    next();
-});
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
+
+var routes = require('./routes/index'),
+    users = require('./routes/users'),
+    memo = require('./routes/memo'),
+    card = require('./routes/card')(passport),
+    image = require('./routes/image'),
+    chat = require('./routes/chat'),
+    room = require('./routes/room'),
+    login = require('./routes/login')(passport);
 
 app.use('/', routes);
 app.use('/users', users);

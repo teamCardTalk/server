@@ -5,11 +5,24 @@ var express = require('express');
 var router = express.Router();
 var login = require('../handlers/login.js');
 
-router.post('/', login.login);
-router.post('/signUp', login.signUp);
-//router.get('/', login.read);
-//router.put('/', login.update);
-//router.delete('/', login.remove);
+
+module.exports = function(passport) {
+    router.post('/signup', passport.authenticate('signup', {
+        failureFlash : true
+    }), login.signUp);
+
+    router.post('/', passport.authenticate('login', {
+        failureFlash : true,
+        failureRedirect : '/login'
+    }), login.login);
+
+    router.get('/', login.getLogin);
+
+    router.get('/logout', login.logout);
+
+    return router;
+};
+
 
 
 module.exports = router;

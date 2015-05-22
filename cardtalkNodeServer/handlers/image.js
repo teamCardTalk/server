@@ -1,6 +1,5 @@
 var fs = require('fs'),
 	querystring = require('querystring');
-var UPLOAD_FOLDER = "./data";
 
 exports.read = function(req, res) {
 
@@ -13,14 +12,14 @@ exports.read = function(req, res) {
 
     if (typeof photo !== 'undefined') {
     	console.log(photo);
-        res.sendfile(photo,
-	        { root: './data'},
+        res.sendFile(photo,
+	        { root: '../data'},
 	        function(err) {
 	            if (err) res.json(err);
 	        });
     } else if (typeof icon !== 'undefined') {
-        res.sendfile(icon,
-	        { root: './icon'},
+        res.sendFile(icon,
+	        { root: '../icon'},
 	        function(err) {
 	            if (err) res.json(err);
 	        });
