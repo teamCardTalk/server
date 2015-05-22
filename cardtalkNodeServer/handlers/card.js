@@ -58,8 +58,6 @@ exports.create = function (req, res) {
             fileInfos.push(fileInfo);
         }
 
-        newCard.file = fileInfos;
-
         card.file = fileInfos;
 
     });
