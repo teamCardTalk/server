@@ -11,8 +11,7 @@ var userSchema = mongoose.Schema({
     icon        : String,
     uid         : String,
     deviceType  : String,
-    participatingRooms : [ String ],
-    friends      : [ String ]
+    participatingRooms : [ String ]
 });
 
 
