@@ -5,7 +5,7 @@ var formidable = require('formidable'),
     fs = require('fs'),
     dateformat = require('dateformat'),
     querystring = require('querystring'),
-    User = require(../model/user.js);
+    User = require('../model/user.js');
 
 //var UPLOAD_FOLDER = __dirname + "/data";
 var UPLOAD_FOLDER = "../data";
@@ -14,8 +14,8 @@ exports.add = function (req, res) {
     var user = req.user;
     var friendid = req.params.userid
     var findid = user.userid;
-    var where = {author: {$elemMatch: {userid: findid}}};
-    var body = { $addToSet: {friends: {$each: friendid}}}
+    var where = {userid: findid};
+    var body = { $addToSet: {friends: friendid}}
 
     User.update(where, body, function(err, results) {
         res.json( {error: err, results: results });
@@ -26,7 +26,7 @@ exports.remove = function (req, res) {
     var user = req.user;
     var friendid = req.params.userid
     var findid = user.userid;
-    var where = {author: {$elemMatch: {userid: findid}}};
+    var where = {userid: findid};
     var body = { $pull: {friends: friendid}}
 
     User.update(where, body, function(err, results) {
@@ -37,11 +37,10 @@ exports.remove = function (req, res) {
 exports.read = function(req, res) {
     var user = req.user;
     var findid = user.userid;
-    var where = {author: {$elemMatch: {userid: findid}}};
+    var wherefirst = {userid: findid}
+    var wheresecond = {friends: 1, _id: 0};
 
-    console.log("where: " + JSON.stringify(where));
-
-    Card.find(where, function (err, results) {
+    User.find(wherefirst, wheresecond, function (err, results) {
         res.json(results);
     });
 };
