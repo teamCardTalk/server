@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var mongoose = require('mongoose');
-var localConfig = require('./config/localConfig2')
+var localConfig = require('./config/localConfig')
 
 var passport = require('passport');
 var redis = require('redis').createClient(),
