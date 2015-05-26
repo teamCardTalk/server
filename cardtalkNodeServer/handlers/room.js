@@ -2,7 +2,19 @@
  * Created by fodrh on 2015. 5. 10..
  */
 
+exports.list = function (req, res) {
+    var roomID = req.params.articleid,
+        redis = req.redis;
 
+    redis.smembers(roomID, function(err, reply) {
+        if (err) console.error(err);
+        var returnValue = {
+            userList : reply
+        };
+
+        res.end(JSON.stringify(returnValue));
+    });
+};
 
 exports.join = function (req, res) {
 

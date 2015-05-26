@@ -8,6 +8,7 @@ var room = require('../handlers/room.js');
 
 router.get('/join/:articleid', isLoggedIn, room.join);
 router.get('/out/:articleid', isLoggedIn, room.out);
+router.get('/list/:articleid', isLoggedIn, room.list);
 //router.post('/', room.create);
 //router.post('/', room.create);
 //router.get('/', room.read);

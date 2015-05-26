@@ -33,7 +33,10 @@ var app = module.exports = express();
 //    }
 //});
 
-mongoose.connect(localConfig.mongo.url, localConfig.mongo.opt);
+mongoose.connect(localConfig.mongo.url, localConfig.mongo.opt, function(err, result) {
+    if (err) return console.error(err);
+    console.log('mongoose connect');
+});
 
 amqp.connect('amqp://localhost', function(err, conn) {
     amqpconn = conn;
@@ -72,6 +75,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+
 var routes = require('./routes/index'),
     users = require('./routes/users'),
     memo = require('./routes/memo'),
@@ -79,7 +83,9 @@ var routes = require('./routes/index'),
     image = require('./routes/image'),
     chat = require('./routes/chat'),
     room = require('./routes/room'),
-    login = require('./routes/login')(passport);
+    login = require('./routes/login');
+
+
 
 app.use('/', routes);
 app.use('/users', users);
