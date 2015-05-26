@@ -10,7 +10,7 @@ module.exports = {
             'replSet' : {
                 'readPreference': 'ReadPreference.SECONDARY_PREFERRED',
                 'slaveOk' : true,
-                'rs_name' : 'repl'
+                'rs_name' : 'cardtalk'
             }
         }
     },
