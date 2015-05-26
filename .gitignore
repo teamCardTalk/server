@@ -5,3 +5,4 @@ cardtalkNodeServer/node_modules
 cardtalkNodeServer/data
 *.jpg
 *.png
+*/localConfig.js
