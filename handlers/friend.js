@@ -45,6 +45,15 @@ exports.read = function(req, res) {
     });
 };
 
+exports.readdetail = function(req, res) {
+    var user = req.user;
+    var friendid = req.params.userid
+    var where = {userid: friendid};
+
+    User.find(where, function (err, results) {
+        res.json(results);
+    });
+};
 
 
 
