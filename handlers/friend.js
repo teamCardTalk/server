@@ -48,9 +48,10 @@ exports.read = function(req, res) {
 exports.readdetail = function(req, res) {
     var user = req.user;
     var friendid = req.params.userid
-    var where = {userid: friendid};
+    var wherefirst = {userid: friendid}
+    var wheresecond= {userid: 1, nickname: 1, icon: 1, _id: 0};
 
-    User.find(where, function (err, results) {
+    User.find(wherefirst, wheresecond, function (err, results) {
         res.json(results);
     });
 };
