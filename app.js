@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
 var mongoose = require('mongoose');
-var localConfig = require('./config/localConfig2')
+var localConfig = require('./config/localConfig')
 
 var passport = require('passport');
 var redis = require('redis').createClient(),
@@ -83,9 +83,8 @@ var routes = require('./routes/index'),
     image = require('./routes/image'),
     chat = require('./routes/chat'),
     room = require('./routes/room'),
-    login = require('./routes/login')(passport);
-
-
+    login = require('./routes/login')(passport),
+    friend = require('./routes/friend');
 
 app.use('/', routes);
 app.use('/users', users);
@@ -95,6 +94,7 @@ app.use('/image', image);
 app.use('/chat', chat);
 app.use('/room', room);
 app.use('/login', login);
+app.use('/friend', friend);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

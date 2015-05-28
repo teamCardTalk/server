@@ -1,90 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="7ded1b9e-ef5a-42d0-b3bb-4aaebfde298a" name="Default" comment="" />
     <ignored path="cardtalkNodeServer.iws" />
-=======
-    <list default="true" id="13d2e377-fa87-4229-92bb-239b40816c61" name="Default" comment="make room">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_00ebb1440deebb6db9f4bfc21c6edf55.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_04128bb7d67a4855a9b575ca6fb267cc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_048ad96e34886595491250a4017aff0a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_04f7a3fed7a21e040531c5f98320f9e6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_0d23b756c1a0ca51d0690c73dc8a8f9c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_0d831bd88971ee92a7b955b1f7e51549.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_0dedfd67058f5ad1939bd4187b118896.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_0e23173d192d1e4182206274030eb43b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_0f92b13e7918c26aa0dd24a488a80211.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_138dc9989c7781006b39e6d6bb791093.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_13db029447b0b192db18f4d0b5945a11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_153a41e1f73fed20911ac0fdc3b75388.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_29f9a9d4518ef2a236e66c6439dad24c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_3126cfbc54d26efe3819589f4859814b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_32f4073ef1d7d42dfd2445c61a0dd280.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_3a43c4764a7fa4e417fefd2ff380ef89.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_3e507a2160eacb82f41779c5d8b0a853.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_405a2380e6ba9971a956095f48a54a9c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_40b81b28f16d7de354f4068396b46961.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_41fe2d00f111f26c85acde90768948cb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_42c8fefc923ccdb62fbf7a93f2d5c769.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_45089d4a82dc4320940206fe986d7b8b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_45136ecfe10717ad1fd8fed89fac09c2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_4b22987cf38099befab8726b794a3c99.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_52dab96a6d1ba070de365a49ae484d51.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_54ab289af2fe5e105a1d1eedd43e43b7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_5eac779038a8347a40465f050b36e168.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_62b6c1d7c6075715f866eec895d89d3a.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_64d287b5aea12ae9d46636e56c1bdcb9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_6e09f0edf313c0d41a7c42bbd12d73fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_73494bd0586ab9337c89eb628bb0f2fc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_74abb0ed7eef3ca6c01bcd1d7bec1fd5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_76ee7c97d970d5e827ecf9052f0976bc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_7726b991189fa98f0c3277304a402d73.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_83bc7a38eb6c88c6c019b411f92f6a50.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8519c944c12551c29018a3785d3cfe1f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8775f594bff1c802fcb93405ab2bbd15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8895ee7036fc55d209c28ae497a16d26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8b3a264224f7cd4b19f9cd65118f6bee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8bbc4dab75d6520858941aff2b583aca.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8da6133198f0253099d76863a1b36551.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8ed0f568039710299fd0f7c4f7215528.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_8fa7e62251c6dea4d7a564309b4cb945.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_94b3540cbbe482098343eb2b0be4432f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_9a042ccf66dbb8d61ffb7f4c7b0266ca.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_9a3eaa880624025d87d492b3af7bce37.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_9f1e944ac4adf9dc50ba72f52356b237.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_a43d2161cd87b74451c0b7091fc7b233.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_aefd60d30b59e417b83ec22bb30fc6ae.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_b18cb3e10faa7c2918271d0a4dd6a815.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_b3aa5b3c70bfe3798307346532204370.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_b9ee7b07a8bd5254c2cb5291a3779066.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_bb637a2eaa5a6a29a71c53c3f2f1b643.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_bcdcbb2d8998f72434b20996291c5ab7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_c0345bcd71d6f42ba4cb0785a4ddeed8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_c6970098afba85baa34f39d97f7f8c08.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_ca3144a6b0c3651e4d8b5bbf5edc7d18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_cbb293ecc5e73a62381977d362a19a68.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_cde3be5bb14607f84f56015ccbe71683.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_d17efbb5d61c1ef441512684a47c42c2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_d45e1dcea6448bf04118bdaef5abe98b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_de27519ad78b7eb161e154f87fa167f9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_df8c44003e82156154622c3cda3c66cf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_e08518759941259f1277bec39b3eb45f.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_e1892154809fc2901996d748c265e30d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_e19debd26c5c201eae6298da1f92848f.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_e2bf5e36f80b32e95bf90efad89eb388.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_e3791acd62fa592767cbc7f0a3d19050.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_eaee7f38d4534d3592a8f2ba7034ab7c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_edef0030148264407081824e4c80a6f9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_ee727cab3fbe9fb34594d3e51e377f81.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_f2896a2d8404d56accbf9e3da50980c4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_f358596d61b2cb87d68279cf75403b0e.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_f59371826d89a01c6b4fb5ff627ece0d.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cardtalkNodeServer/data/upload_ff939f4e6804991d877e96c0a37f4cb6.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <ignored path="cardtalkServer.iws" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,7 +20,6 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-<<<<<<< HEAD
     <favorites_list name="cardtalkNodeServer" />
   </component>
   <component name="FileEditorManager">
@@ -112,181 +29,96 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.85393256" vertical-offset="931" max-vertical-offset="3078">
               <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-=======
-    <favorites_list name="cardtalkServer" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="memo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/memo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1463">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlers/upload.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="2888">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-=======
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="665" max-vertical-offset="2964">
-              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="room.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlers/room.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2147">
               <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-=======
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/upload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2869">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="room.js" pinned="false" current-in-tab="false">
-<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/routes/room.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
               <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-=======
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/room.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1919">
-              <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-=======
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="779">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="localConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/localConfig.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
               <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-=======
-      <file leaf-file-name="card.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="3743">
-              <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="104" selection-end-column="49" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="localConfig2.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/localConfig2.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
               <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
-=======
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1254">
-              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#44#0" expanded="false" />
-              </folding>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="passport.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/passport.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1786">
               <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-=======
-      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="874">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handlers/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
               <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-=======
-      <file leaf-file-name="image.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/image.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9014599" vertical-offset="0" max-vertical-offset="608">
-              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <folding />
             </state>
           </provider>
@@ -294,7 +126,6 @@
       </file>
     </leaf>
   </component>
-<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -306,40 +137,6 @@
         <option value="$PROJECT_DIR$/config/localConfig.js" />
         <option value="$PROJECT_DIR$/config/localConfig2.js" />
         <option value="$PROJECT_DIR$/app.js" />
-=======
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/uploadtest.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/memo.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/upload.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/index.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/bin/www" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/image.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/http/request.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/views/login.ejs" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/model/user.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/model/chat.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/chat.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/config/config.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/card.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/chat.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/image.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/upload.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/login.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/app.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/config/localConfig.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/config/passport.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/login.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/model/card.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/routes/room.js" />
-        <option value="$PROJECT_DIR$/cardtalkNodeServer/handlers/room.js" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
       </list>
     </option>
   </component>
@@ -347,16 +144,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="x" value="-1920" />
     <option name="y" value="-377" />
     <option name="width" value="1920" />
     <option name="height" value="1173" />
-=======
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -386,46 +177,14 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
-=======
-              <option name="myItemId" value="cardtalkServer" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cardtalkNodeServer" />
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="cardtalkNodeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cardtalkNodeServer" />
@@ -434,15 +193,10 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cardtalkServer" />
+              <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -453,21 +207,10 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -478,21 +221,10 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -503,21 +235,10 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -528,21 +249,10 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-=======
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
               <option name="myItemId" value="cardtalkNodeServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -551,59 +261,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-<<<<<<< HEAD
-=======
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cardtalkServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cardtalkNodeServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
-=======
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/node.js_study-master/Passport-Localstrategy" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cardtalkNodeServer/handlers" />
-      <recent name="$PROJECT_DIR$/cardtalkNodeServer/routes" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Node.js.www">
-    <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="www" working-dir="$PROJECT_DIR$/cardtalkNodeServer/bin">
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
-      <method />
-    </configuration>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
@@ -642,18 +310,7 @@
       <envs />
       <method />
     </configuration>
-<<<<<<< HEAD
     <list size="0" />
-=======
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
-      </list>
-    </recent_temporary>
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -661,7 +318,6 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
       <changelist id="7ded1b9e-ef5a-42d0-b3bb-4aaebfde298a" name="Default" comment="" />
       <created>1432135308931</created>
       <option name="number" value="Default" />
@@ -691,131 +347,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
-      <changelist id="13d2e377-fa87-4229-92bb-239b40816c61" name="Default" comment="" />
-      <created>1429151840820</created>
-      <option name="number" value="Default" />
-      <updated>1429151840820</updated>
-    </task>
-    <task id="LOCAL-00001" summary="make room">
-      <created>1431217537926</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1431217537926</updated>
-    </task>
-    <task id="LOCAL-00002" summary="push server init">
-      <created>1431275675681</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1431275675681</updated>
-    </task>
-    <task id="LOCAL-00003" summary="push ok">
-      <created>1431276918036</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1431276918036</updated>
-    </task>
-    <task id="LOCAL-00004" summary="not yet apns, gcm&#10;have to register apns, gcm">
-      <created>1431299767048</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1431299767048</updated>
-    </task>
-    <task id="LOCAL-00005" summary="ver0.1">
-      <created>1431333839214</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1431333839214</updated>
-    </task>
-    <task id="LOCAL-00006" summary="chat time change">
-      <created>1431347456988</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1431347456988</updated>
-    </task>
-    <task id="LOCAL-00007" summary="upgrading server&#10;login init">
-      <created>1431586335125</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1431586335125</updated>
-    </task>
-    <task id="LOCAL-00008" summary="before card modified">
-      <created>1431594974109</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1431594974109</updated>
-    </task>
-    <task id="LOCAL-00009" summary="make room">
-      <created>1431891761926</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1431891761926</updated>
-    </task>
-    <task id="LOCAL-00010" summary="login done">
-      <created>1431940158851</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1431940158851</updated>
-    </task>
-    <task id="LOCAL-00011" summary="login done">
-      <created>1432018684090</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1432018684090</updated>
-    </task>
-    <task id="LOCAL-00012" summary="login out">
-      <created>1432036565378</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1432036565378</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
-    <servers />
-  </component>
-  <component name="TodoView" selected-index="1">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="false" />
-    <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5227606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15806195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5002633" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2921659" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15912409" sideWeight="0.4997367" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882413" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -833,7 +364,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-<<<<<<< HEAD
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -851,64 +381,19 @@
     <entry file="file://$PROJECT_DIR$/views/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
-=======
-    <MESSAGE value="push server init" />
-    <MESSAGE value="push ok" />
-    <MESSAGE value="not yet apns, gcm&#10;have to register apns, gcm" />
-    <MESSAGE value="ver0.1" />
-    <MESSAGE value="chat time change" />
-    <MESSAGE value="upgrading server&#10;login init" />
-    <MESSAGE value="before card modified" />
-    <MESSAGE value="make room" />
-    <MESSAGE value="login done" />
-    <MESSAGE value="login out" />
-    <option name="LAST_COMMIT_MESSAGE" value="login out" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js</url>
-          <line>16</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/routes/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="380" max-vertical-offset="646">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/memo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="1155">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/localConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="589">
@@ -921,24 +406,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="779">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="270">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1395">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/handlers/card.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2166" max-vertical-offset="3838">
@@ -958,45 +429,11 @@
     <entry file="file://$PROJECT_DIR$/handlers/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="285">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1470">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/handlers/image.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="627">
@@ -1009,31 +446,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="270">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1395">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2964">
@@ -1117,100 +533,10 @@
     <entry file="file://$PROJECT_DIR$/routes/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="657">
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="851">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="18354">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1824">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/middleware/initialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="1330">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/http/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1101" max-vertical-offset="2033">
-          <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/authenticator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="8987">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/node_modules/passport/lib/framework/connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="856">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="228">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="862">
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/model/card.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
@@ -1295,246 +621,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2147">
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/views/login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="969">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/memo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/config/localConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="627">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/config/passport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="1748">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/model/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/model/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/model/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="589">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/routes/room.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="779">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/routes/room.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
           <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="2964">
-          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="657">
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2869">
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/localConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/room.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1919">
-          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/localConfig2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-=======
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/handlers/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/memo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1463">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/routes/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1254">
-          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="3743">
-          <caret line="103" column="4" selection-start-line="103" selection-start-column="4" selection-end-line="104" selection-end-column="49" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/passport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1786">
           <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="874">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.85393256" vertical-offset="931" max-vertical-offset="3078">
           <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-=======
-    <entry file="file://$PROJECT_DIR$/cardtalkNodeServer/handlers/image.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9014599" vertical-offset="0" max-vertical-offset="608">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
->>>>>>> ffa9d21c5bfbd7879d09e06386aa7b4990bf76c9
           <folding />
         </state>
       </provider>
