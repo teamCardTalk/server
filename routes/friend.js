@@ -9,6 +9,7 @@ var friend = require('../handlers/friend.js');
 router.post('/:userid', isLoggedIn, friend.add);
 router.delete('/:userid', isLoggedIn, friend.remove);
 router.get('/', isLoggedIn, friend.read);
+router.get('/:userid', isLoggedIn, friend.readdetail);
 
 module.exports = router;
 
