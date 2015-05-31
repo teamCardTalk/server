@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 var room = require('../handlers/room.js');
 
-
+var loginError = 1;
 router.get('/join/:articleid', isLoggedIn, room.join);
 router.get('/out/:articleid', isLoggedIn, room.out);
 router.get('/list/:articleid', isLoggedIn, room.list);
@@ -23,6 +23,5 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-    var host = req.get('host');
-    res.redirect(host + '/login');
+	res.json({error:loginError});
 }

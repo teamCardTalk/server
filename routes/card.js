@@ -5,6 +5,7 @@ var express = require('express'),
     router = express.Router(),
     card = require('../handlers/card.js');
 
+var loginError = 1;
 
 module.exports = function(passport) {
     router.post('/', isLoggedIn, card.create);
@@ -23,6 +24,5 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-    var host = req.get('host');
-    res.redirect(host + '/login');
+    res.json({error:loginError});
 }

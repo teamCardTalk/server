@@ -4,7 +4,7 @@
 var express = require('express');
 var router = express.Router();
 var chat = require('../handlers/chat.js');
-
+var loginError = 1;
 router.post('/', isLoggedIn, chat.create);
 router.get('/:getquery', isLoggedIn, chat.read);
 
@@ -16,6 +16,5 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-    var host = req.get('host');
-    res.redirect(host + '/login');
+	res.json({error:loginError});
 }

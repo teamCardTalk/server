@@ -4,7 +4,7 @@
 var express = require('express');
 var router = express.Router();
 var friend = require('../handlers/friend.js');
-
+var loginError = 1;
 
 router.post('/:userid', isLoggedIn, friend.add);
 router.delete('/:userid', isLoggedIn, friend.remove);
@@ -19,6 +19,5 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-    var host = req.get('host');
-    res.redirect(host + '/login');
+	res.json({error:loginError});
 }

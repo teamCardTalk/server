@@ -4,7 +4,7 @@
 var express = require('express');
 var router = express.Router();
 var upload = require('../handlers/upload.js');
-
+var loginError = 1;
 router.post('/', isLoggedIn,upload.create);
 router.get('/:uploadquery',isLoggedIn, upload.read);
 //router.put('/', upload.update);
@@ -18,6 +18,5 @@ function isLoggedIn(req, res, next) {
         console.log('logged in');
         return next();
     }
-    var host = req.get('host');
-    res.redirect(host + '/login');
+	res.json({error:loginError});
 }
